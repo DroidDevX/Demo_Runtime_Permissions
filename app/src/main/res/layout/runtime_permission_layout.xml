@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:text="Runtime permissions"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle_tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/runtimePermissionRCView"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:listitem="@layout/permission_item_layout"
+                />
+
+
+            <View
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:text="System permissions"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle_tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:text="Signature permissions"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/subtitle_tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <Button
+        android:onClick="viewPermissionBtnOnClick"
+        android:layout_marginTop="8dp"
+        android:text="View Permission Settings"
+        android:id="@+id/viewPermissionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

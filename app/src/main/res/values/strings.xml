@@ -1,0 +1,30 @@
+<resources>
+    <string name ="app_name">Demo_Runtime_Permissions</string>
+
+
+
+    <string-array name="permissions">
+        <item name="Location">Manifest.permission.ACCESS_COARSE_LOCATION</item>
+        <item name="Sensor">Manifest.permission.BODY_SENSORS</item>
+        <item name="Camera">Manifest.permission.CAMERA</item>
+        <item name="Contacts">Manifest.permission.READ_CONTACTS</item>
+        <item name="Audio">Manifest.permission.RECORD_AUDIO</item>
+        <item name="Sms">Manifest.permission.READ_SMS</item>
+        <item name="Storage">Manifest.permission.READ_EXTERNAL_STORAGE</item>
+        <item name="Call log">Manifest.permission.READ_CALL_LOG</item>
+        <item name="Calendar">Manifest.permission.READ_CALENDAR</item>
+    </string-array>
+
+    <string-array name="permissionAllias">
+        <item name="Location">Location</item>
+        <item name="Sensor">Sensor</item>
+        <item name="Camera">Camera</item>
+        <item name="Contacts">Contacts</item>
+        <item name="Audio">Manifest.permission.RECORD_AUDIO</item>
+        <item name="Sms">Manifest.permission.READ_SMS</item>
+        <item name="Storage">Manifest.permission.READ_EXTERNAL_STORAGE</item>
+        <item name="Call log">Manifest.permission.READ_CALL_LOG</item>
+        <item name="Calendar">Manifest.permission.READ_CALENDAR</item>
+    </string-array>
+
+</resources>
